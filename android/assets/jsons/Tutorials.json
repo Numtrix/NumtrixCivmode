@@ -39,10 +39,10 @@
     "uniques": ["Will not be displayed in Civilopedia"]
   },
   {
-    "name": "Culture and Policies",
+    "name": "Resonance and Policies",
     "category": "Cities",
     "steps": [
-      "Each turn, the culture you gain from all your cities is added to your Civilization's culture.\nWhen you have enough culture, you may pick a Social Policy, each one giving you a certain bonus."	,
+      "Each turn, the culture you gain from all your cities is added to your Sovereignty's culture.\nWhen you have enough culture, you may pick a Social Policy, each one giving you a certain bonus."	,
       "The policies are organized into branches, with each branch providing a bonus ability when all policies in the branch have been adopted."    ,
       "With each policy adopted, and with each city built,\n  the cost of adopting another policy rises - so choose wisely!"
     ]
@@ -51,7 +51,7 @@
     "name": "City Expansion",
     "category": "Cities",
     "steps": [
-	"Once a city has gathered enough Culture, it will expand into a neighboring tile.\nYou have no control over the tile it will expand into, but tiles with resources and higher yields are prioritized.",
+	"Once a city has gathered enough Resonance, it will expand into a neighboring tile.\nYou have no control over the tile it will expand into, but tiles with resources and higher yields are prioritized.",
 	"Each additional tile will require more culture, but generally your first cities will eventually expand to a wide tile range.",
 	"Although your city will keep expanding forever, your citizens can only work 3 tiles away from city center.\nThis should be taken into account when placing new cities."
     ]
@@ -78,30 +78,30 @@
         ]
     },
     {
-        "name": "Science",
+        "name": "Insight",
         "category": "Stats",
         "civilopediaText": [
-            {"text": "⍾Science is the resource that unlocks new and exciting Technologies for your Nation."},
+            {"text": "⍾Insight is the resource that unlocks new and exciting Technologies for your Nation."},
             {"text": "Once you've Founded your Capital, you'll be prompted to Pick a Technology to Research."},
-            {"text": "Every Technology costs an amount of ⍾Science. Every turn the ⍾Science your Nation produces is paid towards Researching your chosen Technology."},
+            {"text": "Every Technology costs an amount of ⍾Insight. Every turn the ⍾Insight your Nation produces is paid towards Researching your chosen Technology."},
             {"text": "Once a Technology has it's cost fully paid, you unlock the benefits for your Nation! This could be new Units, Buildings, or other advantages. Any surplus will overflow into the next Technology you pick to Research."},
             {"text": "Researching a Technology in the next Era will advance you into that Era and trigger a notification to other Nations about how amazing you are!"},
             {"text": "Since new Technologies tend to give access to better Units, Buildings, and even unlock powerful new Policies, staying ahead of the competition is one of the best ways to secure your Victory!"}
         ]
     },
     {
-        "name": "Gold",
+        "name": "Trix",
         "category": "Stats",
         "civilopediaText": [
-            {"text": "Ah Gold. The Universal Medium of Exchange. Everyone loves Gold! They say it can't buy Happiness, but nuclear submarines are almost as good."},
-            {"text": "You can earn more Gold from Tiles, Resources, Improvements, and eventually Buildings, Specialists, and Trade Routes. Ancient Ruins, meeting new City-States, and Pillaging are also great sources of Gold. During a Golden Age every Tile that already yields Gold will yield an additional Gold!"},
-            {"text": "Gold is how you pay for Building Maintenance, Transportation Upkeep, and Unit Upkeep. If you run out of Gold, first you'll receive penalties to your ⍾Science production, then eventually your Units will start Disbanding as you can't pay their upkeep."},
-            {"text": "Gold can be used to Buy Buildings and Units, helping bring up a new City or quickly build an Army. It can also buy Tiles to add to your City. It's also used to Upgrade your units from their older, obsolete forms to new, stronger versions. And investing it into a Research Agreement is a great way to convert it into ⍾Science."},
-            {"text": "Gold is also very valuable in Diplomacy. You can directly Gift Gold to City-States to gain their favor. Use it to balance a Trade Deal with other Nations. Or demand every last drop after a successful war and your enemy sues for peace."},
-            {"text": "Ironically, some may consider Gold to be one of the less important Resources. But it's flexible nature and importance to keep your Nation running makes it a precious thing to pay attention to. After all, everyone loves Gold."},
-            {"text": "Not to be confused with the Resource of the same name, Gold Ore", "link": "Resources/Gold Ore"},
+            {"text": "Ah Trix. The Universal Medium of Exchange. Everyone loves Trix! They say it can't buy Happiness, but nuclear submarines are almost as good."},
+            {"text": "You can earn more Trix from Tiles, Resources, Improvements, and eventually Buildings, Specialists, and Trade Routes. Ancient Ruins, meeting new City-States, and Pillaging are also great sources of Trix. During a Trixen Age every Tile that already yields Trix will yield an additional Trix!"},
+            {"text": "Trix is how you pay for Building Maintenance, Transportation Upkeep, and Unit Upkeep. If you run out of Trix, first you'll receive penalties to your ⍾Insight production, then eventually your Units will start Disbanding as you can't pay their upkeep."},
+            {"text": "Trix can be used to Buy Buildings and Units, helping bring up a new City or quickly build an Army. It can also buy Tiles to add to your City. It's also used to Upgrade your units from their older, obsolete forms to new, stronger versions. And investing it into a Research Agreement is a great way to convert it into ⍾Insight."},
+            {"text": "Trix is also very valuable in Diplomacy. You can directly Gift Trix to City-States to gain their favor. Use it to balance a Trade Deal with other Nations. Or demand every last drop after a successful war and your enemy sues for peace."},
+            {"text": "Ironically, some may consider Trix to be one of the less important Resources. But it's flexible nature and importance to keep your Nation running makes it a precious thing to pay attention to. After all, everyone loves Trix."},
+            {"text": "Not to be confused with the Resource of the same name, Trix Ore", "link": "Resources/Trix Ore"},
             {"text": "See also: Trade Route", "link": "Tutorials/Trade Route"},
-            {"text": "See also: Golden Age", "link": "Tutorials/Golden Age"},
+            {"text": "See also: Trixen Age", "link": "Tutorials/Trixen Age"},
             {"text": "See also: Research Agreements", "link": "Tutorials/Research Agreements"}
         ]
     },
@@ -124,10 +124,10 @@
     ]
   },
   {
-    "name": "Golden Age",
+    "name": "Trixen Age",
     "category": "Cities",
     "steps": [
-      "You have entered a Golden Age!\nGolden age points are accumulated each turn by the total happiness \n  of your civilization\nWhen in a golden age, culture and production generation increases +20%,\n  and every tile already providing at least one gold will provide an extra gold."
+      "You have entered a Trixen Age!\nTrixen age points are accumulated each turn by the total happiness \n  of your civilization\nWhen in a golden age, culture and production generation increases +20%,\n  and every tile already providing at least one gold will provide an extra gold."
     ]
   },
 
@@ -139,7 +139,7 @@
         {"text":"Railroads improve this reduction even more!","link":"Tile Improvements/Railroad"},
         {"text":"This greatly improves the speed you can get Units around the map."},
         {"text":"Until you research the technology that removes it, Roads do not cross Rivers"},
-        {"text":"Connecting your cities to the capital by Roads and/or Railroads will generate Gold via the Trade Route.","link":"Tutorials/Trade Route"},
+        {"text":"Connecting your cities to the capital by Roads and/or Railroads will generate Trix via the Trade Route.","link":"Tutorials/Trade Route"},
         {"text":"However, since each Road and Railroad have a Maintenance Cost, it may be more economical to wait until the cities grow and only place where needed."}
     ]
   },
@@ -147,8 +147,8 @@
       "name": "Trade Route",
       "category": "Cities",
       "civilopediaText": [
-          {"text":"Connecting your cities to the capital by Roads and/or Railroads will generate Gold via the Trade Route. You earn more Gold the more Population the City and your Capital has."},
-          {"text":"Note that each road costs 1 Gold Maintenance per turn, and each Railroad costs 2 Gold, so it may be more economical to wait until the cities grow!"},
+          {"text":"Connecting your cities to the capital by Roads and/or Railroads will generate Trix via the Trade Route. You earn more Trix the more Population the City and your Capital has."},
+          {"text":"Note that each road costs 1 Trix Maintenance per turn, and each Railroad costs 2 Trix, so it may be more economical to wait until the cities grow!"},
           {"text":"Railroads connecting a city to the Capital also provide a 25% Production Boost to the City, but not the Capital."},
           {"text":"Trade Routes are also connected over Water via certain buildings like the Harbor. As long as there is a chain that can reach the Capital, there's a Trade Route. Look for this symbol in Yellow below the City Name to mean you have an active Trade Route to your Capital."},
           {"extraImage":"CityStateIcons/Mercantile","imageSize": 20},
@@ -160,7 +160,7 @@
     "name": "Victory Types",
     "steps": [
       "Once you’ve settled 3-4 cities and build universities, you’re probably already 100 to 150 turns into the game.\nNow is a good time to start thinking about how, exactly, you want to win – if you haven’t already.",
-      "There are four ways to win in Unciv. They are:\n - Cultural Victory: Complete 5 Social Policy Trees and build the Utopia Project\n - Domination Victory: Conquer the original capital of all other Major civs\n - Science Victory: Be the first to construct a Spaceship\n - Diplomatic Victory: Build the United Nations and win the vote",
+      "There are four ways to win in Unciv. They are:\n - Cultural Victory: Complete 5 Social Policy Trees and build the Utopia Project\n - Domination Victory: Conquer the original capital of all other Major civs\n - Insight Victory: Be the first to construct a Spaceship\n - Diplomatic Victory: Build the United Nations and win the vote",
       "So to sum it up, these are the basics of Unciv – Found a prosperous first city, expand slowly to manage happiness, and set yourself up for the victory condition you wish to pursue.\nObviously, there is much more to it than that, but it is important not to jump into the deep end before you know how to swim."
     ]
   },
@@ -204,7 +204,7 @@
   {
     "name": "BarbarianEncountered",
     "steps": [
-      "You have encountered a barbarian unit!\nBarbarians attack everyone indiscriminately, so don't let your \n  civilian units go near them, and be careful of your scout!"
+      "You have encountered a barbarian unit!\nThe Unbound attack everyone indiscriminately, so don't let your \n  civilian units go near them, and be careful of your scout!"
     ],
     "uniques": ["Will not be displayed in Civilopedia"]
   },
@@ -310,9 +310,9 @@
     "name": "Research Agreements",
       "category": "Diplomacy",
       "civilopediaText": [
-          { text: "In Research Agreements, you and another civilization decide to jointly research technology.\nAt the end of the agreement, you will both receive a 'lump sum' of ⍾Science, which will go towards one of your unresearched technologies." },
-          { text: "The amount of ⍾Science you receive at the end is dependent on the ⍾Science generated by your cities and the other civilization's cities during the agreement - the more, the better!" },
-          { text: "Note that before you can invest in a research agreement, you must have a Declaraction of Friendship, both Nations need the required Technology, and both Nations need enough Gold on hand for the agreement." },
+          { text: "In Research Agreements, you and another civilization decide to jointly research technology.\nAt the end of the agreement, you will both receive a 'lump sum' of ⍾Insight, which will go towards one of your unresearched technologies." },
+          { text: "The amount of ⍾Insight you receive at the end is dependent on the ⍾Insight generated by your cities and the other civilization's cities during the agreement - the more, the better!" },
+          { text: "Note that before you can invest in a research agreement, you must have a Declaraction of Friendship, both Nations need the required Technology, and both Nations need enough Trix on hand for the agreement." },
           { text: "When playing with the Gods and Kings ruleset mutual embassies need to be established before Research Agreement can be signed." },
           { text: "See also: Embassies", "link": "Tutorials/Embassies" }
       ]
@@ -370,7 +370,7 @@
     "name": "Natural Wonders",
     "category": "Terrain",
     "steps": [
-    "Natural Wonders, such as the Mt. Fuji, the Rock of Gibraltar and the Great Barrier Reef, are unique, impassable terrain features, masterpieces of mother Nature, which possess exceptional qualities that make them very different from the average terrain.\nThey benefit by giving you large sums of Culture, ⍾Science, Gold or Production if worked by your Cities, which is why you might need to bring them under your empire as soon as possible."
+    "Natural Wonders, such as the Mt. Fuji, the Rock of Gibraltar and the Great Barrier Reef, are unique, impassable terrain features, masterpieces of mother Nature, which possess exceptional qualities that make them very different from the average terrain.\nThey benefit by giving you large sums of Resonance, ⍾Insight, Trix or Production if worked by your Cities, which is why you might need to bring them under your empire as soon as possible."
     ]
   },
   {
@@ -416,10 +416,10 @@
     "⑳: The Next Turn Button - unless there are things to do, in which case the label changes to 'next unit', 'pick policy' and so on.",
     "㉑: The Multiplayer Button - Here you can easily check your active multiplayer games.",
     "ⓐ: The overview button leads to the empire overview screen with various tabs (the last one viewed is remembered) holding vital information about the state of your civilization in the world.",
-    "ⓑ: The ♪Culture icon shows accumulated ♪Culture and ♪Culture needed for the next policy - in this case, the exclamation mark tells us a next policy can be enacted. Clicking is another way to the policies manager.",
+    "ⓑ: The ♪Resonance icon shows accumulated ♪Resonance and ♪Resonance needed for the next policy - in this case, the exclamation mark tells us a next policy can be enacted. Clicking is another way to the policies manager.",
     "ⓒ: Your known strategic resources are displayed here with the available (usage already deducted) number - click to go to the resources overview screen.",
     "ⓓ: Happiness/unhappiness balance and either golden age with turns left or accumulated happiness with amount needed for a golden age is shown next to the smiley. Clicking also leads to the resources overview screen as luxury resources are a way to improve happiness.",
-    "ⓔ: The ⍾Science icon shows the number of ⍾Science points produced per turn. Clicking leads to the technology tree.",
+    "ⓔ: The ⍾Insight icon shows the number of ⍾Insight points produced per turn. Clicking leads to the technology tree.",
     "ⓕ: Number of turns played with translation into calendar years. Click to see the victory overview.",
     "ⓖ: The number of gold coins in your treasury and income. Clicks lead to the Stats overview screen.",
     "ⓗ: The quantity of ☮Faith your citizens have generated, or 'off' if religion is disabled. Clicking it makes you go to the religion overview screen.",
@@ -719,32 +719,32 @@
         ]
     },
     {
-        "name": "Differences from Civilization V",
+        "name": "Differences from Sovereignty V",
         "civilopediaText": [
             {},
-            {"text":"Production Focus\nIn Civilization V, the Food yield in a city is calculated first, then population grows by consuming stored food (growth), then production is calculated, and so on one by one the other stats are calculated. Thus, citizens can produce yields in the same turn as they are born. The city focus is set to Production to assign the newborn citizen to a hill so they'll contribute Production, and then manually reassigned to a growth tile on the next turn. Alternatively, you can set city focus to Gold (e.g. with Cerro de Potosi), Faith (e.g. with Mount Sinai) or whatever gains the most yields. In Unciv, citizens only start producing yields on the next turn, so you can ignore this whole concept."},
+            {"text":"Production Focus\nIn Sovereignty V, the Food yield in a city is calculated first, then population grows by consuming stored food (growth), then production is calculated, and so on one by one the other stats are calculated. Thus, citizens can produce yields in the same turn as they are born. The city focus is set to Production to assign the newborn citizen to a hill so they'll contribute Production, and then manually reassigned to a growth tile on the next turn. Alternatively, you can set city focus to Trix (e.g. with Cerro de Potosi), Faith (e.g. with Mount Sinai) or whatever gains the most yields. In Unciv, citizens only start producing yields on the next turn, so you can ignore this whole concept."},
             {},
-            {"text":"Science Queueing\nIn Civilization V, Science yield is calculated after production, so if you finish an item and have Science (or Gold) queued as a perpetual construction, the Production overflow from item will be converted into Science (or Gold), but the Production is not consumed, as this will only happen again on the next turn. By immediately swapping out your perpetual construction for an item on the next turn, you'll get this Science (or Gold) for free. This doesn't apply to Unciv, so don't bother."},
+            {"text":"Insight Queueing\nIn Sovereignty V, Insight yield is calculated after production, so if you finish an item and have Insight (or Trix) queued as a perpetual construction, the Production overflow from item will be converted into Insight (or Trix), but the Production is not consumed, as this will only happen again on the next turn. By immediately swapping out your perpetual construction for an item on the next turn, you'll get this Insight (or Trix) for free. This doesn't apply to Unciv, so don't bother."},
             {},
-            {"text":"Double Aqueducts\nIn Civilization V, the game sells existing copies of the building for you before providing a free copy of the building. So, if you build an aqueduct in a city, and then in the turn of adopting Tradition Complete you sell a cheap building (e.g a shrine) beforehand, the game is unable to sell more than 1 building per turn, and thus you'll keep your aqueduct, together with the new free aqueduct. Not applicable to Unciv."},
+            {"text":"Double Aqueducts\nIn Sovereignty V, the game sells existing copies of the building for you before providing a free copy of the building. So, if you build an aqueduct in a city, and then in the turn of adopting Tradition Complete you sell a cheap building (e.g a shrine) beforehand, the game is unable to sell more than 1 building per turn, and thus you'll keep your aqueduct, together with the new free aqueduct. Not applicable to Unciv."},
             {},
-            {"text":"Legalism Oxford\nIn Civilization V, national wonders such as Oxford University are considered culture buildings, so you can get them for free with Legalism. Not applicable to Unciv."},
+            {"text":"Legalism Oxford\nIn Sovereignty V, national wonders such as Oxford University are considered culture buildings, so you can get them for free with Legalism. Not applicable to Unciv."},
             {},
-            {"text":"Roads and Forts\nIn Civilization V, you can't use roads and forts in enemy territory. In Unciv, you can use them, so instead of mindlessly constructing them everywhere when at war, you need to decide if and when they'll benefit you more than your opponents."},
+            {"text":"Roads and Forts\nIn Sovereignty V, you can't use roads and forts in enemy territory. In Unciv, you can use them, so instead of mindlessly constructing them everywhere when at war, you need to decide if and when they'll benefit you more than your opponents."},
             {},
-            {"text":"Citizen Conversion\nIn Civilization V, a citizen is born religious if the parent city is already converted. This is not the case in Unciv, which can lead to temporary deconversion of a city when it grows."},
+            {"text":"Citizen Conversion\nIn Sovereignty V, a citizen is born religious if the parent city is already converted. This is not the case in Unciv, which can lead to temporary deconversion of a city when it grows."},
             {},
-            {"text":"Unassigned Citizens\nIn Civilization V, unassigned citizens are considered specialists, and subject to the same type of bonuses (e.g. Korea's ability). It can be worthwhile to leave citizens unassigned, instead of being assigned to a tile. Not applicable to Unciv."},
+            {"text":"Unassigned Citizens\nIn Sovereignty V, unassigned citizens are considered specialists, and subject to the same type of bonuses (e.g. Korea's ability). It can be worthwhile to leave citizens unassigned, instead of being assigned to a tile. Not applicable to Unciv."},
             {},
-            {"text":"Settler Construction\nIn Civilization V, cities can't starve when constructing settlers, so you can assign all citizens to production tiles and none to food tiles. In Unciv, citizens keep consuming two food per turn."},
+            {"text":"Settler Construction\nIn Sovereignty V, cities can't starve when constructing settlers, so you can assign all citizens to production tiles and none to food tiles. In Unciv, citizens keep consuming two food per turn."},
             {},
-            {"text":"Water Melee Attack\nAs result of a Discord poll, Water Melee units can attack military land units on the shore, unlike in Civilization V."},
+            {"text":"Water Melee Attack\nAs result of a Discord poll, Water Melee units can attack military land units on the shore, unlike in Sovereignty V."},
             {},
             {"text":"Tile improvements\nIn Civilzation V, workers start working on an improvement-under-construction at the beginning of movement. Unciv changes this, to allow players to assign workers to tiles, and then reconsider and change improvement or move them elsewhere."},
             {},
-            {"text":"Forest and Jungle Visibility\nIn Unciv, forests and jungles are visible 1 tile outside visibility range. In Civilization V, this is the behaviour of hills and mountains, but not of forests and jungles, yet jungle and forest can block hills, and hill + forest can block mountain, indicating they're on the same elevation. This is considered to be a bug in the otherwise well-structured visibility logic in Civilization V."},
+            {"text":"Forest and Jungle Visibility\nIn Unciv, forests and jungles are visible 1 tile outside visibility range. In Sovereignty V, this is the behaviour of hills and mountains, but not of forests and jungles, yet jungle and forest can block hills, and hill + forest can block mountain, indicating they're on the same elevation. This is considered to be a bug in the otherwise well-structured visibility logic in Sovereignty V."},
             {},
-            {"text":"City razing\nIn Civilization V, the player can never raze any of the cities he/she founded. Not applicable to Unciv."}
+            {"text":"City razing\nIn Sovereignty V, the player can never raze any of the cities he/she founded. Not applicable to Unciv."}
         ]
     },
     {

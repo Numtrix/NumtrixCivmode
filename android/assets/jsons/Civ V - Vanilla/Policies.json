@@ -10,8 +10,8 @@
             "Scientific": 10
         },
         "uniques": [
-            "[+3 Culture] [in capital]",
-            "[-25]% Culture cost of natural border growth [in all cities]"
+            "[+3 Resonance] [in capital]",
+            "[-25]% Resonance cost of natural border growth [in all cities]"
         ],
         "policies": [
             {
@@ -26,7 +26,7 @@
             {
                 "name": "Legalism",
                 "uniques": [
-                    "Provides the cheapest [Culture] building in your first [4] cities for free"
+                    "Provides the cheapest [Resonance] building in your first [4] cities for free"
                 ],
                 "row": 1,
                 "column": 3
@@ -53,7 +53,7 @@
             {
                 "name": "Monarchy",
                 "uniques": [
-                    "[+1 Gold, +1 Happiness] per [2] population [in capital]"
+                    "[+1 Trix, +1 Happiness] per [2] population [in capital]"
                 ],
                 "requires": ["Legalism"],
                 "row": 2,
@@ -79,7 +79,7 @@
             "Domination": 20,
             "Scientific": 20
         },
-        "uniques": ["[+1 Culture] [in all cities]"],
+        "uniques": ["[+1 Resonance] [in all cities]"],
         "policies": [
 
             {
@@ -151,7 +151,7 @@
         },
         "uniques": [
             "[+25]% Strength <vs [Barbarian] units>",
-            "Earn [100]% of killed [Barbarian] unit's [Strength] as [Culture]",
+            "Earn [100]% of killed [Barbarian] unit's [Strength] as [Resonance]",
             "Notified of new Barbarian encampments"
         ],
         "policies": [
@@ -184,7 +184,7 @@
             {
                 "name": "Military Caste",
                 "uniques": [
-                    "[+1 Happiness, +2 Culture] [in all cities with a garrison]"
+                    "[+1 Happiness, +2 Resonance] [in all cities with a garrison]"
                 ],
                 "requires": ["Discipline"],
                 "row": 2,
@@ -193,7 +193,7 @@
             {
                 "name": "Professional Army",
                 "uniques": [
-                    "[-33]% Gold cost of upgrading <for [Military] units>",
+                    "[-33]% Trix cost of upgrading <for [Military] units>",
                     "[+1 Happiness] from every [Walls]",
                     "[+1 Happiness] from every [Castle]",
                     "[+1 Happiness] from every [Arsenal]",
@@ -206,7 +206,7 @@
             {
                 "name": "Honor Complete",
                 "uniques": [
-                    "Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
+                    "Earn [10]% of killed [Military] unit's [Cost] as [Trix]",
                     "Get the leader title of [[leaderName] the Great]"
                 ]
             }
@@ -223,7 +223,7 @@
             "Scientific": 0
         },
         "uniques": [
-            "[+15]% Production when constructing [Culture] buildings [in all cities]",
+            "[+15]% Production when constructing [Resonance] buildings [in all cities]",
             "Only available <before adopting [Rationalism]>"
         ],
         "policies": [
@@ -239,13 +239,13 @@
             },
             {
                 "name": "Mandate Of Heaven",
-                "uniques": ["[50]% of excess happiness converted to [Culture]"],
+                "uniques": ["[50]% of excess happiness converted to [Resonance]"],
                 "row": 1,
                 "column": 5
             },
             {
                 "name": "Theocracy",
-                "uniques": ["[+10]% [Gold] from every [Temple]"],
+                "uniques": ["[+10]% [Trix] from every [Temple]"],
                 "requires": ["Organized Religion"],
                 "row": 2,
                 "column": 1
@@ -253,7 +253,7 @@
             {
                 "name": "Reformation",
                 "uniques": [
-                    "[+33]% [Culture] [in all cities with a world wonder]",
+                    "[+33]% [Resonance] [in all cities with a world wonder]",
                     "Empire enters golden age"
                 ],
                 "requires": ["Organized Religion"],
@@ -264,9 +264,9 @@
                 "name": "Free Religion",
                 "uniques": [
                     "Free Social Policy",
-                    "[+1 Culture] from every [Monument]",
-                    "[+1 Culture] from every [Temple]",
-                    "[+1 Culture] from every [Monastery]"
+                    "[+1 Resonance] from every [Monument]",
+                    "[+1 Resonance] from every [Temple]",
+                    "[+1 Resonance] from every [Monastery]"
                 ],
                 "requires": ["Mandate Of Heaven", "Reformation"],
                 "row": 3,
@@ -275,7 +275,7 @@
             {
                 "name": "Piety Complete",
                 "uniques": [
-                    "[-10]% Culture cost of adopting new Policies",
+                    "[-10]% Resonance cost of adopting new Policies",
                     "Get the leader title of [[leaderName] the Pious]"
                 ]
             }
@@ -293,13 +293,13 @@
         },
         "uniques": [
             "[-25]% City-State Influence degradation",
-            "[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Civilizations] is less than [2]>"
+            "[-100]% weight to this choice for AI decisions <when number of [Remaining [City-State] Sovereigntys] is less than [2]>"
         ],
         "policies": [
             {
                 "name": "Philantropy",
                 "uniques": [
-                    "Gifts of Gold to City-States generate [25]% more Influence"
+                    "Gifts of Trix to City-States generate [25]% more Influence"
                 ],
                 "row": 1,
                 "column": 2
@@ -315,7 +315,7 @@
             {
                 "name": "Scholasticism",
                 "uniques": [
-                    "Allied City-States provide [Science] equal to [25]% of what they produce for themselves"
+                    "Allied City-States provide [Insight] equal to [25]% of what they produce for themselves"
                 ],
                 "requires": ["Philantropy"],
                 "row": 2,
@@ -360,7 +360,7 @@
             "Domination": 20,
             "Scientific": 10
         },
-        "uniques": ["[+25]% [Gold] [in capital]"],
+        "uniques": ["[+25]% [Trix] [in capital]"],
         "policies": [
             {
                 "name": "Naval Tradition",
@@ -375,8 +375,8 @@
                 "name": "Trade Unions",
                 "uniques": [
                     "[-33]% maintenance on road & railroads",
-                    "[+1 Gold] from every [Harbor]",
-                    "[+1 Gold] from every [Seaport]"
+                    "[+1 Trix] from every [Harbor]",
+                    "[+1 Trix] from every [Seaport]"
                 ],
                 "row": 1,
                 "column": 4
@@ -391,7 +391,7 @@
             {
                 "name": "Mercantilism",
                 "uniques": [
-                    "[Gold] cost of purchasing items in cities [-25]%"
+                    "[Trix] cost of purchasing items in cities [-25]%"
                 ],
                 "requires": ["Trade Unions"],
                 "row": 2,
@@ -407,7 +407,7 @@
             {
                 "name": "Commerce Complete",
                 "uniques": [
-                    "[+1 Gold] from every specialist [in all cities]",
+                    "[+1 Trix] from every specialist [in all cities]",
                     "Get the leader title of [Doge [leaderName]]"
                 ]
             }
@@ -424,14 +424,14 @@
             "Scientific": 40
         },
         "uniques": [
-            "Science gained from research agreements [+50]%",
+            "Insight gained from research agreements [+50]%",
             "Only available <before adopting [Piety]>"
         ],
         "policies": [
             {
                 "name": "Secularism",
                 "uniques": [
-                    "[+2 Science] from every specialist [in all cities]"
+                    "[+2 Insight] from every specialist [in all cities]"
                 ],
                 "row": 1,
                 "column": 2
@@ -449,8 +449,8 @@
             {
                 "name": "Free Thought",
                 "uniques": [
-                    "[+1 Science] from every [Trading post]",
-                    "[+17]% [Science] from every [University]"
+                    "[+1 Insight] from every [Trading post]",
+                    "[+17]% [Insight] from every [University]"
                 ],
                 "requires": ["Secularism"],
                 "row": 2,
@@ -458,7 +458,7 @@
             },
             {
                 "name": "Sovereignty",
-                "uniques": ["[+15]% [Science] <while the empire is happy>"],
+                "uniques": ["[+15]% [Insight] <while the empire is happy>"],
                 "requires": ["Humanism"],
                 "row": 2,
                 "column": 4
@@ -473,7 +473,7 @@
             {
                 "name": "Rationalism Complete",
                 "uniques": [
-                    "[+1 Gold] from all [Science] buildings",
+                    "[+1 Trix] from all [Insight] buildings",
                     "Get the leader title of [[leaderName] the Wise]"
                 ]
             }
@@ -497,7 +497,7 @@
         "policies": [
             {
                 "name": "Constitution",
-                "uniques": ["[+2 Culture] from every [Wonder]"],
+                "uniques": ["[+2 Resonance] from every [Wonder]"],
                 "row": 1,
                 "column": 1
             },
@@ -535,7 +535,7 @@
                 "name": "Freedom Complete",
                 "uniques": [
                     "[+100]% Yield from every [Great Improvement]",
-                    "[+50]% Golden Age length",
+                    "[+50]% Trixen Age length",
                     "Get the leader title of [President [leaderName]]"
                 ]
             }
@@ -565,7 +565,7 @@
             },
             {
                 "name": "Militarism",
-                "uniques": ["[Gold] cost of purchasing [All] units [-33]%"],
+                "uniques": ["[Trix] cost of purchasing [All] units [-33]%"],
                 "row": 1,
                 "column": 4
             },
@@ -634,7 +634,7 @@
             {
                 "name": "Planned Economy",
                 "uniques": [
-                    "[+25]% [Science] from every [Factory]"
+                    "[+25]% [Insight] from every [Factory]"
                 ],
                 "row": 1,
                 "column": 3
@@ -669,7 +669,7 @@
             {
                 "name": "Order Complete",
                 "uniques": [
-                    "[+1 Food, +1 Production, +1 Science, +1 Gold, +1 Culture] [in all cities]",
+                    "[+1 Food, +1 Production, +1 Insight, +1 Trix, +1 Resonance] [in all cities]",
                     "Get the leader title of [Chairman [leaderName]]"
                 ]
             }

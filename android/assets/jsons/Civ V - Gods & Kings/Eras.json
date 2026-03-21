@@ -23,8 +23,8 @@
         "startingWorkerCount": 0,
         "startingMilitaryUnitCount": 2,
         "startingMilitaryUnit": "Spearman",
-        "startingGold": 10,
-        "startingCulture": 100,
+        "startingTrix": 10,
+        "startingResonance": 100,
         "settlerPopulation": 1,
         "baseUnitBuyCost": 200,
         "embarkDefense": 4,
@@ -39,8 +39,8 @@
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 3,
         "startingMilitaryUnit": "Spearman",
-        "startingGold": 25,
-        "startingCulture": 200,
+        "startingTrix": 25,
+        "startingResonance": 200,
         "settlerPopulation": 1,
         "settlerBuildings": ["Shrine","Monument"],
         // So theoretically this is always just all the wonders at least 2 eras old. So we could just use that.
@@ -60,8 +60,8 @@
         "startingWorkerCount": 1,
         "startingMilitaryUnitCount": 3,
         "startingMilitaryUnit": "Pikeman",
-        "startingGold": 50,
-        "startingCulture": 300,
+        "startingTrix": 50,
+        "startingResonance": 300,
         "settlerPopulation": 2,
         "settlerBuildings": ["Shrine","Monument","Granary","Lighthouse"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -70,7 +70,7 @@
         "embarkDefense": 8,
         "startPercent": 37,
         "citySound": "cityRenaissance",
-        "uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
+        "uniques": ["Every major Sovereignty gains a spy once a civilization enters this era"],
         "iconRGB": [104, 58, 183]
     },
     {
@@ -80,8 +80,8 @@
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
         "startingMilitaryUnit": "Musketman",
-        "startingGold": 100,
-        "startingCulture": 400,
+        "startingTrix": 100,
+        "startingResonance": 400,
         "settlerPopulation": 3,
         "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -95,7 +95,7 @@
         "uniques": ["May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
             "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
+            "Every major Sovereignty gains a spy once a civilization enters this era"
         ]
     },
     {
@@ -105,8 +105,8 @@
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
         "startingMilitaryUnit": "Rifleman",
-        "startingGold": 200,
-        "startingCulture": 500,
+        "startingTrix": 200,
+        "startingResonance": 500,
         "settlerPopulation": 3,
         "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -121,7 +121,7 @@
         "uniques": ["May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
             "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
+            "Every major Sovereignty gains a spy once a civilization enters this era"
         ]
     },
     {
@@ -131,8 +131,8 @@
         "startingWorkerCount": 2,
         "startingMilitaryUnitCount": 5,
         "startingMilitaryUnit": "Infantry",
-        "startingGold": 200,
-        "startingCulture": 500,
+        "startingTrix": 200,
+        "startingResonance": 500,
         "settlerPopulation": 4,
         "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -148,7 +148,7 @@
         "uniques": ["May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
             "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
+            "Every major Sovereignty gains a spy once a civilization enters this era"
         ]
     },
     {
@@ -158,8 +158,8 @@
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
         "startingMilitaryUnit": "Marine",
-        "startingGold": 400,
-        "startingCulture": 600,
+        "startingTrix": 400,
+        "startingResonance": 600,
         "settlerPopulation": 5,
         "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum","Theatre","Bank"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -177,7 +177,7 @@
         "uniques": ["May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
             "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
+            "Every major Sovereignty gains a spy once a civilization enters this era"
         ]
     },
     { // Technically, this Era doesn't exist in the original game.
@@ -189,8 +189,8 @@
         "startingWorkerCount": 3,
         "startingMilitaryUnitCount": 5,
         "startingMilitaryUnit": "Marine",
-        "startingGold": 400,
-        "startingCulture": 600,
+        "startingTrix": 400,
+        "startingResonance": 600,
         "settlerPopulation": 5,
         "settlerBuildings": ["Monument","Granary","Lighthouse","Market","Workshop","Amphitheater","Barracks","Library","Colosseum","Theatre","Bank"],
         "startingObsoleteWonders": ["Temple of Artemis", "Stonehenge", "The Great Library", "Mausoleum of Halicarnassus", "The Pyramids", "Statue of Zeus",
@@ -207,7 +207,7 @@
         "uniques": ["May not generate great prophet equivalents naturally",
             "May buy [Great Prophet] units for [200] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([100])",
             "Starting in this era disables religion",
-            "Every major Civilization gains a spy once a civilization enters this era"
+            "Every major Sovereignty gains a spy once a civilization enters this era"
         ]
     }
 ]

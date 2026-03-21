@@ -1,6 +1,6 @@
 [
 
-	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/
+	// Info according to Sovereignty Wiki and https://www.civfanatics.com/civ5/info/units/
 
 	/* Ancient Era */
 	{
@@ -79,7 +79,7 @@
 	{
 		"name": "Brute",
 		"unitType": "Sword",
-		"uniqueTo": "Barbarians",
+		"uniqueTo": "The Unbound",
 		"replaces": "Warrior",
 		"movement": 2,
 		"strength": 6,
@@ -132,7 +132,7 @@
 	{
 		"name": "Skirmisher",
 		"unitType": "Archery",
-		"uniqueTo": "Barbarians",
+		"uniqueTo": "The Unbound",
 		"replaces": "Archer",
 		"movement": 2,
 		"strength": 4,
@@ -168,7 +168,7 @@
 	{
 		"name": "Galley",
 		"unitType": "Ranged Water",
-		"uniqueTo": "Barbarians",
+		"uniqueTo": "The Unbound",
 		"movement": 3,
 		"strength": 5,
         "rangedStrength": 3,
@@ -268,7 +268,7 @@
 		"name": "Marauder",
 		"unitType": "Sword",
 		"replaces": "Spearman",
-		"uniqueTo": "Barbarians",
+		"uniqueTo": "The Unbound",
 		"movement": 2,
 		"strength": 10,
 		"cost": 56,
@@ -425,7 +425,7 @@
 		"strength": 18,
 		"cost": 120,
 		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"upgradesTo": "Cavalry",
 		"requiredResource": "Horses",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
@@ -443,7 +443,7 @@
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
@@ -458,7 +458,7 @@
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"uniques": ["Can move after attacking","No defensive terrain bonus", "Founds a new city <on foreign continents>", "[+2] Sight"],
 		"promotions": ["[Conquistador] ability"],
 		"attackSound": "horse"
@@ -472,7 +472,7 @@
 		"strength": 22,
 		"cost": 120,
 		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"upgradesTo": "Cavalry",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[+50]% Strength <vs [Mounted] units>","[-33]% Strength <vs cities> <when attacking>"],
 		"attackSound": "elephant"
@@ -488,7 +488,7 @@
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
 		"attackSound": "horse"
 	},
@@ -504,7 +504,7 @@
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
-		"obsoleteTech": "Military Science",
+		"obsoleteTech": "Military Insight",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
 		"promotions": ["Great Generals I", "Quick Study"],
 		"attackSound": "arrow"
@@ -833,7 +833,7 @@
 		"movement": 3,
 		"strength": 25,
 		"cost": 225,
-		"requiredTech": "Military Science",
+		"requiredTech": "Military Insight",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
 		"upgradesTo": "Tank",
@@ -848,7 +848,7 @@
 		"movement": 3,
 		"strength": 25,
 		"cost": 225,
-		"requiredTech": "Military Science",
+		"requiredTech": "Military Insight",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
 		"upgradesTo": "Tank",
@@ -1276,10 +1276,10 @@
 		"name": "Great Artist",
 		"unitType": "Civilian",
 		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "Empire enters a [8]-turn Trixen Age <by consuming this unit>",
             "Can instantly construct a [Landmark] improvement <by consuming this unit>",
             "Is part of Great Person group [Artist]",
-            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+            "Great Person - [Resonance]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
 	{
@@ -1288,7 +1288,7 @@
 		"uniques": ["Can hurry technology research",
             "Can instantly construct a [Academy] improvement <by consuming this unit>",
             "Is part of Great Person group [Scientist]",
-            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+            "Great Person - [Insight]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
 	{
@@ -1297,7 +1297,7 @@
 		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
             "Can instantly construct a [Customs house] improvement <by consuming this unit>",
             "Is part of Great Person group [Merchant]",
-			"Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+			"Great Person - [Trix]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
 	{
@@ -1313,7 +1313,7 @@
 		"name": "Great General",
 		"unitType": "Civilian",
 		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "Empire enters a [8]-turn Trixen Age <by consuming this unit>",
             "[+15]% Strength bonus for [Military] units within [2] tiles",
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Can be earned through combat",
@@ -1327,7 +1327,7 @@
 		"uniqueTo": "Mongolia",
 		"replaces": "Great General",
 		"uniques": [
-            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "Empire enters a [8]-turn Trixen Age <by consuming this unit>",
             "[+15]% Strength bonus for [Military] units within [2] tiles",
 			"All adjacent units heal [+15] HP when healing", "[+15] HP when healing",
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",
@@ -1347,7 +1347,7 @@
 		"cost": 500,
 		"requiredTech": "Robotics",
 		"requiredResource": "Aluminum",
-		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Civilization", "Only available <when [Scientific] Victory is enabled>"]
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Sovereignty", "Only available <when [Scientific] Victory is enabled>"]
 		// costs 1500 in BNW
 	},
 	{
@@ -1357,7 +1357,7 @@
 		"cost": 750,
 		"requiredTech": "Satellites",
 		"requiredResource": "Aluminum",
-		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization", "Only available <when [Scientific] Victory is enabled>"]
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Sovereignty", "Only available <when [Scientific] Victory is enabled>"]
 		// costs 1500 in BNW
 	},
 	{
@@ -1367,7 +1367,7 @@
 		"cost": 750,
 		"requiredTech": "Particle Physics",
 		"requiredResource": "Aluminum",
-		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization", "Only available <when [Scientific] Victory is enabled>"]
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Sovereignty", "Only available <when [Scientific] Victory is enabled>"]
 		// costs 1500 in BNW
 	},
 	{
@@ -1377,7 +1377,7 @@
 		"cost": 750,
 		"requiredTech": "Nanotechnology",
 		"requiredResource": "Aluminum",
-		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization", "Only available <when [Scientific] Victory is enabled>"]
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Sovereignty", "Only available <when [Scientific] Victory is enabled>"]
 		// costs 1500 in BNW
 	}
 ]

@@ -1,15 +1,15 @@
 [
     {
-        "name": "Cultured",
+        "name": "Resonanced",
         "friendBonusUniques": [
-            "[+3 Culture] <before the [Medieval era]>",
-            "[+6 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
-            "[+13 Culture] <starting from the [Industrial era]>"
+            "[+3 Resonance] <before the [Medieval era]>",
+            "[+6 Resonance] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+13 Resonance] <starting from the [Industrial era]>"
         ],
         "allyBonusUniques": [
-            "[+6 Culture] <before the [Medieval era]>",
-            "[+12 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
-            "[+26 Culture] <starting from the [Industrial era]>"
+            "[+6 Resonance] <before the [Medieval era]>",
+            "[+12 Resonance] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+26 Resonance] <starting from the [Industrial era]>"
         ],
         "color": [139, 96, 255]
     },

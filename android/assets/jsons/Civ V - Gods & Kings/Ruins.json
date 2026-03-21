@@ -3,7 +3,7 @@
         "name": "discover cultural artifacts",
         "notification": "We have discovered cultural artifacts in the ruins! (+20 culture)",
         "uniques": [
-            "Gain [20] [Culture] <(modified by game speed)>",
+            "Gain [20] [Resonance] <(modified by game speed)>",
             "Play [policy] sound"
         ],
         "color": "#cf8ff7"
@@ -44,7 +44,7 @@
         "name": "a stash of gold",
         "notification": "", // trigger notification only
         "uniques": [
-            "Gain [50]-[100] [Gold] <(modified by game speed)>",
+            "Gain [50]-[100] [Trix] <(modified by game speed)>",
             "Play [coin] sound"
         ],
         "color": "#ffeb7f"

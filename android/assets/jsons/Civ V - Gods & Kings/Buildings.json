@@ -41,14 +41,14 @@
 		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
 			"[+1 Food] from [Wheat] tiles [in this city]"],
-		"requiredTech": "Pottery"
+		"requiredTech": "Vessels of the Well"
 	},
 	{
 		"name": "Shrine",
 		"faith": 1,
 		"cost": 40,
 		"maintenance": 1,
-		"requiredTech": "Pottery",
+		"requiredTech": "Vessels of the Well",
 		"uniques": ["Only available <when religion is enabled>"]
 	},
 	{
@@ -59,7 +59,7 @@
 		"science": 2,
 		"cost": 40,
 		"maintenance": 1,
-		"requiredTech": "Pottery",
+		"requiredTech": "Vessels of the Well",
 		"uniques": ["Only available <when religion is enabled>"]
 	},
 	{
@@ -83,22 +83,22 @@
 		"uniques": ["Must not be on [Plains]",
 			"[+1 Production] from [Stone] tiles [in this city]",
 			"[+1 Production] from [Marble] tiles [in this city]"],
-		"requiredTech": "Calendar"
+		"requiredTech": "Celestial Alignment"
 	},
 	{
 		"name": "Stonehenge",
 		"faith": 5,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 1},
-		"requiredTech": "Calendar",
+		"requiredTech": "Celestial Alignment",
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
 	{
 		"name": "Library",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"uniques": ["[+1 Science] per [2] population [in this city]"],
-		"requiredTech": "Writing"
+		"uniques": ["[+1 Insight] per [2] population [in this city]"],
+		"requiredTech": "Runic Inscription"
 	},
 	{
 		"name": "Paper Maker",
@@ -106,8 +106,8 @@
 		"uniqueTo": "China",
 		"hurryCostModifier": 25,
 		"gold": 2,
-		"uniques": ["[+1 Science] per [2] population [in this city]"],
-		"requiredTech": "Writing"
+		"uniques": ["[+1 Insight] per [2] population [in this city]"],
+		"requiredTech": "Runic Inscription"
 	},
 	{
 		"name": "The Great Library",
@@ -115,7 +115,7 @@
 		"culture": 1,
 		"greatPersonPoints": {"Great Scientist": 1},
 		"isWonder": true,
-		"requiredTech": "Writing",
+		"requiredTech": "Runic Inscription",
 		"uniques": ["Free Technology", "Gain a free [Library] [in this city]"],
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
@@ -152,7 +152,7 @@
 		"cityStrength": 5,
 		"cityHealth": 50,
 		"hurryCostModifier": 25,
-		"requiredTech": "Masonry",
+		"requiredTech": "Stone-Singing",
 		"uniques": ["Destroyed when the city is captured"]
 	},
 	{
@@ -163,7 +163,7 @@
 		"cityStrength": 6,
 		"cityHealth": 100,
 		"hurryCostModifier": 25,
-		"requiredTech": "Masonry",
+		"requiredTech": "Stone-Singing",
 		"uniques": ["Destroyed when the city is captured"]
 	},
 	{
@@ -172,7 +172,7 @@
 		"greatPersonPoints": {"Great Engineer": 1},
 		"isWonder": true,
 		"uniques": ["Can build [all] improvements at a [+25]% rate","[2] free [Worker] units appear"],
-		"requiredTech": "Masonry",
+		"requiredTech": "Stone-Singing",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
 	{
@@ -180,9 +180,9 @@
 		"culture": 1,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
-			"[+2 Gold] from [Marble] tiles [in this city]", "[+2 Gold] from [Stone] tiles [in this city]"],
-		"requiredTech": "Masonry",
+		"uniques": ["Gain [100] [Trix] <upon expending a [Great Person] unit> <(modified by game speed)>",
+			"[+2 Trix] from [Marble] tiles [in this city]", "[+2 Trix] from [Stone] tiles [in this city]"],
+		"requiredTech": "Stone-Singing",
 		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
 	},
 	{
@@ -198,7 +198,7 @@
 		"uniqueTo": "Russia",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"uniques": ["[-25]% Culture cost of natural border growth [in this city]","[-25]% Gold cost of acquiring tiles [in this city]",
+		"uniques": ["[-25]% Resonance cost of natural border growth [in this city]","[-25]% Trix cost of acquiring tiles [in this city]",
 			"New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"],
 		"requiredTech": "Bronze Working"
 	},
@@ -303,7 +303,7 @@
 		"replaces": "Temple",
 		"uniqueTo": "Egypt",
 		"maintenance": 0,
-		"uniques": ["[+100]% Gold given to enemy if city is captured <in this city>"],
+		"uniques": ["[+100]% Trix given to enemy if city is captured <in this city>"],
 		"faith": 2,
 		"happiness": 2,
 		"requiredBuilding": "Shrine",
@@ -375,15 +375,15 @@
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"gold": 25},
 		"uniques": ["Provides 1 extra copy of each improved luxury resource near this City",
-			"[+2 Gold] from [Oil] tiles [in this city]", "[+2 Gold] from [Oasis] tiles [in this city]"],
+			"[+2 Trix] from [Oil] tiles [in this city]", "[+2 Trix] from [Oasis] tiles [in this city]"],
 		"requiredTech": "Currency"
 	},
 	{
 		"name": "Mint",
 		"maintenance": 0,
-		"requiredNearbyImprovedResources": ["Gold Ore", "Silver"],
+		"requiredNearbyImprovedResources": ["Trix Ore", "Silver"],
 		"hurryCostModifier": 25,
-		"uniques": ["[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]"],
+		"uniques": ["[+2 Trix] from [Trix Ore] tiles [in this city]", "[+2 Trix] from [Silver] tiles [in this city]"],
 		"requiredTech": "Currency"
 	},
 	{
@@ -391,7 +391,7 @@
 		"culture": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 1},
-		"uniques": ["Must be next to [Desert]", "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]", "Gain a free [Amphitheater] [in this city]", "[+6 Culture] [in this city] <after discovering [Archaeology]>"],
+		"uniques": ["Must be next to [Desert]", "[+1 Food, +1 Production, +1 Trix] from [Desert] tiles without [Flood plains] [in this city]", "Gain a free [Amphitheater] [in this city]", "[+6 Resonance] [in this city] <after discovering [Archaeology]>"],
 		"requiredTech": "Currency",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
@@ -428,7 +428,7 @@
 		"gold": 5,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
+		"uniques": ["Must be next to [Coast]", "[+1 Trix] from [Water] tiles [in this city]"],
 		"requiredTech": "Iron Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
@@ -480,7 +480,7 @@
 		"happiness": 4,
 		"greatPersonPoints": {"Great Engineer": 1},
 		"isWonder": true,
-		"uniques": ["[+50]% Golden Age length"],
+		"uniques": ["[+50]% Trixen Age length"],
 		"requiredTech": "Civil Service",
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam"
 	},
@@ -499,7 +499,7 @@
 		"faith": 2,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["[+25]% [Gold] from Trade Routes", "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"],
+		"uniques": ["[+25]% [Trix] from Trade Routes", "Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"],
 		"requiredTech": "Guilds",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
 	},
@@ -550,7 +550,7 @@
 		"percentStatBonus": {"science": 33},
 		"specialistSlots": {"Scientist": 2},
 		"requiredBuilding": "Library",
-		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+		"uniques": ["[+2 Insight] from [Jungle] tiles [in this city]"],
 		"requiredTech": "Education"
 	},
 	{
@@ -563,7 +563,7 @@
 		"specialistSlots": {"Scientist": 2},
 		"culture": 3,
 		"requiredBuilding": "Library",
-		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+		"uniques": ["[+2 Insight] from [Jungle] tiles [in this city]"],
 		"requiredTech": "Education"
 	},
 	{
@@ -580,7 +580,7 @@
 		"culture": 1,
 		"greatPersonPoints": {"Great Engineer": 1},
 		"isWonder": true,
-		"uniques": ["[-25]% Culture cost of natural border growth [in all cities]","[-25]% Gold cost of acquiring tiles [in all cities]"],
+		"uniques": ["[-25]% Resonance cost of natural border growth [in all cities]","[-25]% Trix cost of acquiring tiles [in all cities]"],
 		"requiredTech": "Education",
 		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena"
 	},
@@ -603,7 +603,7 @@
 		"culture": 2,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
-		"uniques": ["[+1 Gold] [in this city] <after discovering [Flight]>", "Destroyed when the city is captured"],
+		"uniques": ["[+1 Trix] [in this city] <after discovering [Flight]>", "Destroyed when the city is captured"],
 		"requiredTech": "Chivalry"
 	},
 	{
@@ -684,7 +684,7 @@
 		"culture": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
-		"uniques": ["[+25]% [Culture] [in all cities]"],
+		"uniques": ["[+25]% [Resonance] [in all cities]"],
 		"requiredTech": "Acoustics",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
 	},
@@ -772,7 +772,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"requiredBuilding": "Harbor",
-		"uniques": ["[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
+		"uniques": ["[+1 Production, +1 Trix] from [Water resource] tiles [in this city]",
 			"Must be next to [Coast]", "[+15]% Production when constructing [Water] units [in this city]"],
 		"requiredTech": "Navigation"
 	},
@@ -800,7 +800,7 @@
 		"culture": 1,
 		"greatPersonPoints": {"Great Scientist": 2},
 		"isWonder": true,
-		"uniques": ["Free [Great Scientist] appears","Science gained from research agreements [+50]%"],
+		"uniques": ["Free [Great Scientist] appears","Insight gained from research agreements [+50]%"],
 		"requiredTech": "Architecture",
 		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell"
 	},
@@ -875,7 +875,7 @@
 		"requiredBuilding": "University",
 		"maintenance": 3,
 		"hurryCostModifier": 0,
-		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"uniques": ["[+1 Insight] per [2] population [in this city]"],
 		"requiredTech": "Scientific Theory"
 	},
 	{
@@ -896,7 +896,7 @@
 		"gold": 4,
 		"greatPersonPoints": {"Great Merchant": 2},
 		"isWonder": true,
-		"uniques": ["[Gold] cost of purchasing items in cities [-15]%"],
+		"uniques": ["[Trix] cost of purchasing items in cities [-15]%"],
 		"requiredTech": "Industrialization",
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein"
 	},
@@ -906,7 +906,7 @@
 		"maintenance": 1,
 		"requiredBuilding": "Armory",
 		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"],
-		"requiredTech": "Military Science"
+		"requiredTech": "Military Insight"
 	},
 	{
 		"name": "Brandenburg Gate",
@@ -914,7 +914,7 @@
 		"greatPersonPoints": {"Great Scientist": 2},
 		"isWonder": true,
 		"uniques": ["Free [Great General] appears", "New [Military] units start with [15] XP [in this city]"],
-		"requiredTech": "Military Science",
+		"requiredTech": "Military Insight",
 		"quote": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace"
 	},
 	// Column 10
@@ -1021,7 +1021,7 @@
 		"gold": 6,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["[+1 Happiness, +2 Culture, +3 Gold] from every [Castle]",
+		"uniques": ["[+1 Happiness, +2 Resonance, +3 Trix] from every [Castle]",
 			"Must have an owned [{non-[Natural Wonder]} {Mountain}] within [2] tiles"],
 		"requiredTech": "Railroads",
 		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
@@ -1041,7 +1041,7 @@
 		"culture": 5,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
-		"uniques": ["[-10]% Culture cost of adopting new Policies"],
+		"uniques": ["[-10]% Resonance cost of adopting new Policies"],
 		"requiredTech": "Plastics",
 		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28"
 	},
@@ -1068,7 +1068,7 @@
 		"isWonder": true,
 		"culture": 3,
 		"greatPersonPoints": {"Great Engineer": 2},
-		"uniques": ["[-33]% Gold cost of upgrading <for [Military] units>"],
+		"uniques": ["[-33]% Trix cost of upgrading <for [Military] units>"],
 		"requiredTech": "Combined Arms",
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
 	},
@@ -1086,7 +1086,7 @@
 		"name": "Recycling Center",
 		"maintenance": 3,
 		"requiredTech": "Ecology",
-		"uniques": ["Provides [2] [Aluminum]","Limited to [5] per Civilization"]
+		"uniques": ["Provides [2] [Aluminum]","Limited to [5] per Sovereignty"]
 	},
 	{
 		"name": "Sydney Opera House",
@@ -1204,8 +1204,8 @@
 		"cost": 0,
 		"culture": 2,
 		"faith": 2,
-		"uniques": ["[+1 Culture, +1 Faith] from [Wine] tiles [in this city]",
-			"[+1 Culture, +1 Faith] from [Incense] tiles [in this city]",
+		"uniques": ["[+1 Resonance, +1 Faith] from [Wine] tiles [in this city]",
+			"[+1 Resonance, +1 Faith] from [Incense] tiles [in this city]",
 			"Unbuildable", "Only available <when religion is enabled>", "Destroyed when the city is captured"]
 	},
 	{

@@ -259,7 +259,7 @@
 					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>"]
 	},
 	{
-		"name": "Gold Ore", // Not called "Gold" in order to not conflict with siege type units for translations
+		"name": "Trix Ore", // Not called "Trix" in order to not conflict with siege type units for translations
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle"],
 		"gold": 2,

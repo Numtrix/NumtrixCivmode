@@ -20,20 +20,20 @@
       "military": Military Training,
       "aggressive": Offensive or (10 - defensive) which ever is higher,
       "declareWar": War,
-      "commerce": Gold + Chattiness,
+      "commerce": Trix + Chattiness,
       "diplomacy": Diplomatic Balance + Friendly,
       "loyal": Loyalty + Defense,
       "expansion": Expansion,
       "denounceWillingness": Denouncing
 
       "priorities": {
-          "Tradition": Culture + Wonder,
+          "Tradition": Resonance + Wonder,
           "Liberty": Expansion + TileImprovement,
           "Honor": Boldness + War,
-          "Commerce": Gold + Chatiness,
+          "Commerce": Trix + Chatiness,
           "Patronage": CityStateCompetitiveness + CSFriendly,
           "Piety": Faith + CS Friendly,
-          "Rationalism": Science + Spaceship,
+          "Rationalism": Insight + Spaceship,
           "Freedom": Hapiness + Growth,
           "Autocracy": Boldness + Military training,
           "Order": Defensive + Production

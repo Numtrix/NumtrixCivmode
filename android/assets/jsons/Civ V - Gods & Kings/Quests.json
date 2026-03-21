@@ -17,7 +17,7 @@
     "influence": 50,
     "minimumCivs": 1,
       "weightForCityStateType": {
-          "Cultured": 3,
+          "Resonanced": 3,
           "Maritime": 3,
           "Mercantile": 3,
           "Militaristic": 9,
@@ -36,14 +36,14 @@
     "name": "Construct Wonder",
     "description": "We recommend you to start building [wonder] to show the whole world your civilization strength.",
       "weightForCityStateType": {
-          "Cultured": 3
+          "Resonanced": 3
       }
   },
   {
     "name": "Acquire Great Person",
-    "description": "Great People can change the course of a Civilization! You will be rewarded for acquiring a new [greatPerson].",
+    "description": "Great People can change the course of a Sovereignty! You will be rewarded for acquiring a new [greatPerson].",
       "weightForCityStateType": {
-          "Cultured": 3
+          "Resonanced": 3
       }
   },
   {
@@ -75,12 +75,12 @@
   },
   /* G&K */
   {
-    "name": "Give Gold",
-    "description": "We are suffering great poverty after being robbed by [civName], and unless we receive a sum of Gold, it's only a matter of time before we collapse.",
+    "name": "Give Trix",
+    "description": "We are suffering great poverty after being robbed by [civName], and unless we receive a sum of Trix, it's only a matter of time before we collapse.",
     "influence": 20,
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 3,
+          "Resonanced": 3,
           "Maritime": 3,
           "Mercantile": 3.5,
           "Militaristic": 2,
@@ -93,7 +93,7 @@
     "influence": 20,
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 3.5,
+          "Resonanced": 3.5,
           "Maritime": 3,
           "Mercantile": 3,
           "Militaristic": 2,
@@ -101,13 +101,13 @@
       }
   },
   {
-    "name": "Contest Culture",
-    "description": "The civilization with the largest Culture growth will gain a reward.",
+    "name": "Contest Resonance",
+    "description": "The civilization with the largest Resonance growth will gain a reward.",
     "type": "Global",
     "duration": 30,
     "minimumCivs": 3,
       "weightForCityStateType": {
-          "Cultured": 2,
+          "Resonanced": 2,
           "Maritime": 0.5,
           "Mercantile": 0.5,
           "Militaristic": 0.5,
@@ -121,7 +121,7 @@
     "duration": 30,
     "minimumCivs": 3,
       "weightForCityStateType": {
-          "Cultured": 0.5,
+          "Resonanced": 0.5,
           "Maritime": 0.5,
           "Mercantile": 0.5,
           "Militaristic": 0.5,
@@ -140,7 +140,7 @@
   },
   {
     "name": "Invest",
-    "description": "Our people are rejoicing thanks to a tourism boom. For a certain amount of time, any Gold donation will yield [50]% extra Influence.",
+    "description": "Our people are rejoicing thanks to a tourism boom. For a certain amount of time, any Trix donation will yield [50]% extra Influence.",
     "type": "Global",
     "influence": 0,
     "duration": 30,
@@ -160,11 +160,11 @@
       }
   },
   {
-    "name": "Denounce Civilization",
+    "name": "Denounce Sovereignty",
     "description": "We have been forced to pay tribute to [civName]! We need you to tell the world of their ill deeds.",
     "duration": 30,
       "weightForCityStateType": {
-          "Cultured": 1.5,
+          "Resonanced": 1.5,
           "Maritime": 2,
           "Mercantile": 1.5,
           "Militaristic": 1.5,

@@ -22,7 +22,7 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Pottery",
+				"name": "Vessels of the Well",
 				"row": 2,
 				"prerequisites": ["Agriculture"],
 				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
@@ -40,7 +40,7 @@
 				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
 			},
 			{
-				"name": "Mining",
+				"name": "Resource Extraction",
 				"row": 9,
 				"prerequisites": ["Agriculture"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
@@ -58,19 +58,19 @@
 			{
 				"name": "Sailing",
 				"row": 1,
-				"prerequisites": ["Pottery"],
+				"prerequisites": ["Vessels of the Well"],
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
 			{
-				"name": "Calendar",
+				"name": "Celestial Alignment",
 				"row": 2,
-				"prerequisites": ["Pottery"],
+				"prerequisites": ["Vessels of the Well"],
 				"quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
 			},
 			{
-				"name": "Writing",
+				"name": "Runic Inscription",
 				"row": 3,
-				"prerequisites": ["Pottery"],
+				"prerequisites": ["Vessels of the Well"],
 				"uniques": ["Enables Open Borders agreements"],
 				"quote": "'He who destroys a good book kills reason itself.' - John Milton"
 			},
@@ -87,15 +87,15 @@
 				"quote": "'Wisdom and virtue are like the two wheels of a cart.' - Japanese proverb"
 			},
 			{
-				"name": "Masonry",
+				"name": "Stone-Singing",
 				"row": 9,
-				"prerequisites": ["Mining"],
+				"prerequisites": ["Resource Extraction"],
 				"quote": "'How happy are those whose walls already rise!' - Virgil"
 			},
 			{
 				"name": "Bronze Working",
 				"row": 10,
-				"prerequisites": ["Mining"],
+				"prerequisites": ["Resource Extraction"],
 				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
 			}
 		]
@@ -118,7 +118,7 @@
 			{
 				"name": "Philosophy",
 				"row": 3,
-				"prerequisites": ["Writing"],
+				"prerequisites": ["Runic Inscription"],
 				"uniques": ["Enables Research agreements"],
 				"quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
 			},
@@ -137,7 +137,7 @@
 			{
 				"name": "Construction",
 				"row": 9,
-				"prerequisites": ["Masonry"],
+				"prerequisites": ["Stone-Singing"],
 				"quote": "'Three things are to be looked to in a building: that it stands on the right spot; that it be securely founded; that it be successfully executed.' - Johann Wolfgang von Goethe"
 			},
 			{
@@ -158,7 +158,7 @@
 			{
 				"name": "Theology",
 				"row": 2,
-				"prerequisites": ["Calendar", "Philosophy"],
+				"prerequisites": ["Celestial Alignment", "Philosophy"],
 				"quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
 			},
 			{
@@ -171,7 +171,7 @@
 				"name": "Currency",
 				"row": 7,
 				"prerequisites": ["Mathematics"],
-				"uniques": ["Enables conversion of city production to [Gold]"],
+				"uniques": ["Enables conversion of city production to [Trix]"],
 				"quote": "'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
 			},
 			{
@@ -207,7 +207,7 @@
 				"name": "Education",
 				"row": 3,
 				"prerequisites": ["Theology","Civil Service"],
-				"uniques": ["Enables conversion of city production to [Science]"],
+				"uniques": ["Enables conversion of city production to [Insight]"],
 				"quote": "'Education is the best provision for old age.' - Aristotle"
 			},
 			{
@@ -331,7 +331,7 @@
 				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
-				"name": "Military Science",
+				"name": "Military Insight",
 				"row": 6,
 				"prerequisites": ["Economics","Chemistry"],
 				"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
@@ -367,13 +367,13 @@
 				"name": "Steam Power",
 				"row": 6,
 				"uniques": ["[+1] Movement <for [Embarked] units>"],
-				"prerequisites": ["Military Science","Scientific Theory"],
+				"prerequisites": ["Military Insight","Scientific Theory"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"
 			},
 			{
 				"name": "Dynamite",
 				"row": 9,
-				"prerequisites": ["Fertilizer","Military Science","Rifling"],
+				"prerequisites": ["Fertilizer","Military Insight","Rifling"],
 				"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
 			}
 		]
