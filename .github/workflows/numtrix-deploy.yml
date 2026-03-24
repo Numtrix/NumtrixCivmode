@@ -69,11 +69,13 @@ jobs:
               node -e "
                 const fs = require('fs');
                 function parseJsonWithComments(text) {
-                  // Strip single-line comments (// ...) but not inside strings
-                  const stripped = text.replace(/^(\s*)\/\/.*$/gm, '');
-                  // Also strip trailing commas before ] or }
-                  const cleaned = stripped.replace(/,(\s*[\]}])/g, '\$1');
-                  return JSON.parse(cleaned);
+                  // Strip block comments /* ... */
+                  let s = text.replace(/\/\*[\s\S]*?\*\//g, '');
+                  // Strip single-line comments // ...
+                  s = s.replace(/^(\s*)\/\/.*$/gm, '');
+                  // Strip trailing commas before ] or }
+                  s = s.replace(/,(\s*[\]}])/g, '\$1');
+                  return JSON.parse(s);
                 }
                 const engineText = fs.readFileSync('$dest_rel', 'utf8');
                 const vaultText = fs.readFileSync('$src', 'utf8');
