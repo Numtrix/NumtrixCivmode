@@ -60,6 +60,7 @@ jobs:
           done
 
           # 3. JSON array merges (_merge directories — APPEND to engine arrays)
+          #    Engine JSON files may contain JS-style comments, so we strip them first
           find "_vault" -path '*/_merge/*.json' -type f | while read src; do
             rel="${src#_vault/}"
             dest_rel="$(echo "$rel" | sed 's|/_merge/|/|')"
@@ -67,8 +68,17 @@ jobs:
               echo "  [merge] $dest_rel"
               node -e "
                 const fs = require('fs');
-                const engine = JSON.parse(fs.readFileSync('$dest_rel', 'utf8'));
-                const vault = JSON.parse(fs.readFileSync('$src', 'utf8'));
+                function parseJsonWithComments(text) {
+                  // Strip single-line comments (// ...) but not inside strings
+                  const stripped = text.replace(/^(\s*)\/\/.*$/gm, '');
+                  // Also strip trailing commas before ] or }
+                  const cleaned = stripped.replace(/,(\s*[\]}])/g, '\$1');
+                  return JSON.parse(cleaned);
+                }
+                const engineText = fs.readFileSync('$dest_rel', 'utf8');
+                const vaultText = fs.readFileSync('$src', 'utf8');
+                const engine = parseJsonWithComments(engineText);
+                const vault = JSON.parse(vaultText);
                 if (Array.isArray(engine) && Array.isArray(vault)) {
                   const merged = engine.concat(vault);
                   fs.writeFileSync('$dest_rel', JSON.stringify(merged, null, 2));
