@@ -1,4 +1,5 @@
 [build]
+  command = "curl -s https://get.sdkman.io | bash && export SDKMAN_DIR=\"$HOME/.sdkman\" && [[ -s \"$HOME/.sdkman/bin/sdkman-init.sh\" ]] && source \"$HOME/.sdkman/bin/sdkman-init.sh\" && sdk install java 21.0.4-tem && sdk use java 21.0.4-tem && chmod +x gradlew && ./gradlew :web:webBuildJs --no-daemon -Dorg.gradle.jvmargs=\"-Xmx3g -Xms1g\""
   publish = "web/build/dist"
 
 [[headers]]
