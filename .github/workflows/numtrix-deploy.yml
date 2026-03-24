@@ -33,10 +33,10 @@ jobs:
         run: |
           echo "=== Merging vault overlays ==="
 
-          # 1. Direct asset files (translations, Tutorials, strings, fastlane)
+          # 1. Direct asset files (skip _merge and overlay dirs)
           for dir in android fastlane; do
             if [ -d "_vault/$dir" ]; then
-              find "_vault/$dir" -type f ! -path '*/overlay/*' | while read src; do
+              find "_vault/$dir" -type f ! -path '*/overlay/*' ! -path '*/_merge/*' | while read src; do
                 rel="${src#_vault/}"
                 mkdir -p "$(dirname "$rel")"
                 cp "$src" "$rel"
@@ -56,6 +56,29 @@ jobs:
                 cp "$src" "$dest"
                 echo "  [overlay] $module/$rel_from_overlay"
               done
+            fi
+          done
+
+          # 3. JSON array merges (_merge directories — APPEND to engine arrays)
+          find "_vault" -path '*/_merge/*.json' -type f | while read src; do
+            rel="${src#_vault/}"
+            dest_rel="$(echo "$rel" | sed 's|/_merge/|/|')"
+            if [ -f "$dest_rel" ]; then
+              echo "  [merge] $dest_rel"
+              node -e "
+                const fs = require('fs');
+                const engine = JSON.parse(fs.readFileSync('$dest_rel', 'utf8'));
+                const vault = JSON.parse(fs.readFileSync('$src', 'utf8'));
+                if (Array.isArray(engine) && Array.isArray(vault)) {
+                  const merged = engine.concat(vault);
+                  fs.writeFileSync('$dest_rel', JSON.stringify(merged, null, 2));
+                  console.log('    Merged ' + vault.length + ' entries (total: ' + merged.length + ')');
+                }
+              "
+            else
+              echo "  [merge-new] $dest_rel"
+              mkdir -p "$(dirname "$dest_rel")"
+              cp "$src" "$dest_rel"
             fi
           done
 
