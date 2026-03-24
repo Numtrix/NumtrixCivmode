@@ -6,15 +6,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "numtrix-deploy"
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    name: Build Web + Deploy to Netlify
+  build:
+    name: Build Web JS Bundle
     runs-on: ubuntu-latest
     steps:
       - name: Checkout engine
@@ -70,20 +72,19 @@ jobs:
             unciv-web-builder \
             bash -lc "./gradlew --configuration-cache :web:webBuildJs"
 
-      - name: Verify dist output
-        run: |
-          echo "=== Build output ==="
-          ls -la web/build/dist/ || echo "No dist directory"
-          ls -la web/build/dist/webapp/ 2>/dev/null || true
-          find web/build/dist -name "*.html" -o -name "*.js" | head -20
-
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3
+      - name: Upload dist artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          publish-dir: web/build/dist
-          production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from ${{ github.sha }}"
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          path: web/build/dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
