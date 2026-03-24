@@ -1,0 +1,89 @@
+name: Numtrix Frontiers — Build & Deploy
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "numtrix-deploy"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Build Web + Deploy to Netlify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout engine
+        uses: actions/checkout@v4
+
+      - name: Clone Numtrix-Assets-Vault
+        uses: actions/checkout@v4
+        with:
+          repository: Numtrix/Numtrix-Assets-Vault
+          token: ${{ secrets.VAULT_TOKEN }}
+          path: _vault
+
+      - name: Merge vault into engine
+        run: |
+          echo "=== Merging vault overlays ==="
+
+          # 1. Direct asset files (translations, Tutorials, strings, fastlane)
+          for dir in android fastlane; do
+            if [ -d "_vault/$dir" ]; then
+              find "_vault/$dir" -type f ! -path '*/overlay/*' | while read src; do
+                rel="${src#_vault/}"
+                mkdir -p "$(dirname "$rel")"
+                cp "$src" "$rel"
+                echo "  [copy] $rel"
+              done
+            fi
+          done
+
+          # 2. Module overlays (core/overlay/..., desktop/overlay/..., web/overlay/...)
+          for module in core desktop web; do
+            overlay_dir="_vault/$module/overlay"
+            if [ -d "$overlay_dir" ]; then
+              find "$overlay_dir" -type f | while read src; do
+                rel_from_overlay="${src#$overlay_dir/}"
+                dest="$module/$rel_from_overlay"
+                mkdir -p "$(dirname "$dest")"
+                cp "$src" "$dest"
+                echo "  [overlay] $module/$rel_from_overlay"
+              done
+            fi
+          done
+
+          echo "=== Vault merge complete ==="
+
+      - name: Build web toolchain container
+        run: docker build -f .devcontainer/Dockerfile -t unciv-web-builder .
+
+      - name: Build JS bundle
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}:/workspace" \
+            -w /workspace \
+            unciv-web-builder \
+            bash -lc "./gradlew --configuration-cache :web:webBuildJs"
+
+      - name: Verify dist output
+        run: |
+          echo "=== Build output ==="
+          ls -la web/build/dist/ || echo "No dist directory"
+          ls -la web/build/dist/webapp/ 2>/dev/null || true
+          find web/build/dist -name "*.html" -o -name "*.js" | head -20
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
+        with:
+          publish-dir: web/build/dist
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from ${{ github.sha }}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
